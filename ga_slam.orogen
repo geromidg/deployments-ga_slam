@@ -1,0 +1,20 @@
+name 'ga_slam'
+
+using_task_library 'camera_bb2'
+using_task_library 'camera_bb3'
+using_task_library 'stereo'
+# using_task_library 'viso2'
+using_task_library 'ga_slam'
+using_task_library 'gps_transformer'
+
+deployment 'ga_slam_core' do
+    task('camera_bb2', 'camera_bb2::Task')
+    task('camera_bb3', 'camera_bb2::Task')
+    task('stereo_bb2', 'stereo::Task')
+    task('stereo_bb3', 'stereo::Task')
+    # task('viso2', 'viso2::StereoOdometer')
+    task('ga_slam', 'ga_slam::Task')
+    task('gps_transformer', 'gps_transformer::Task')
+    add_default_logger
+end
+

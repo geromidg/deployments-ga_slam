@@ -1,0 +1,16 @@
+<package>
+  <description brief="Deployments used by GA SLAM">
+  </description>
+  <author>Dimitris Geromichalos/geromidg@gmail.com</author>
+  <license></license>
+  <url>http://</url>
+  <logo>http://</logo>
+  <depend package="base/cmake" />
+  <depend package="drivers/orogen/camera_bb2" />
+  <depend package="drivers/orogen/camera_bb3" />
+  <depend package="perception/orogen/stereo" />
+  <!-- <depend package="perception/orogen/viso2" /> -->
+  <depend package="slam/orogen/ga_slam" />
+  <depend package="perception/orogen/gps_transformer" />
+</package>
+
