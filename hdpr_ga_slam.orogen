@@ -1,4 +1,4 @@
-name 'ga_slam'
+name 'ga_slam_deployments'
 
 using_task_library 'camera_bb2'
 using_task_library 'camera_bb3'
